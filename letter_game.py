@@ -87,4 +87,17 @@ def play(done):
 			else:
 				sys.exit()
 
+def welcome():
+	start = input("Press enter to begin or Q to quit: ")
+	if start == 'q':
+		print("Bye! \n")
+		sys.exit()
+	else:
+		return True
+print("Welcome to Letter Game!")
+done = False
 
+while True:
+	clear()
+	welcome()
+	play(done)
