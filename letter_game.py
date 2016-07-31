@@ -1,5 +1,7 @@
 import random
 import os
+import sys
+
 # Make a list of words
 words = [
 
@@ -53,37 +55,36 @@ def get_guess(bad_guesses, good_guesses):
 		return guess
 		break
 
-number_of_guesses = 7
-while True:
-	start = input("Press Enter to start the game or type Q to quit: ")
-	if start.lower() == 'q':
-		break
-
-	# Pick a random word - choice method picks a random item out of an iterable
+def play(done):
+	clear()
 	secret_word = random.choice(words)
 	bad_guesses = []
 	good_guesses = []
+	number_of_guesses = 7
 
-	while len(bad_guesses) < 7 and len(good_guesses) != len(list(secret_word)):
-
-
-
-
-
-		if guess.lower() in secret_word.lower():
+	while True:
+		draw(bad_guesses, good_guesses, secret_word)
+		guess = get_guess(bad_guesses, good_guesses)
+		if guess in secret_word:
 			good_guesses.append(guess)
-			x = len(list(secret_word))
-			y = len(good_guesses)
-			if len(good_guesses) == len(list(secret_word)):
-				print("You win! The word was {}".format(secret_word))
-				print("")
-				break
-		if guess not in secret_word:
+			found = True
+			for letter in secret_word:
+				if letter not in good_guesses:
+					found = False
+			if found:
+				print("You win! The secret word was: {}".format(secret_word))
+				done = True
+		else:
 			bad_guesses.append(guess)
+			if len(bad_guesses) == number_of_guesses:
+				print("You lost! The secret word was: {}".format(secret_word))
+				done = True
 
-
-	# Print win or loss
-	else:
-		print("You didn't guess it! My secret word was {}".format(secret_word))
+		if done:
+			play_again = input("Would you like to play again? Y/N").lower()
+			if play_again != 'n':
+				return play(done=False)
+			else:
+				sys.exit()
 
 
