@@ -5,6 +5,7 @@ words = [
 
 	'apple',
 	'banana',
+
 	'orange',
 	'strawberry',
 	'lemon',
@@ -51,6 +52,8 @@ while True:
 
 		if guess.lower() in secret_word.lower():
 			good_guesses.append(guess)
+			x = len(list(secret_word))
+			y = len(good_guesses)
 			if len(good_guesses) == len(list(secret_word)):
 				print("You win! The word was {}".format(secret_word))
 				print("")
