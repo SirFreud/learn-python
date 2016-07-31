@@ -26,11 +26,11 @@ while True:
 	good_guesses = []
 
 	while len(bad_guesses) < 7 and len(good_guesses) != len(list(secret_word)):
-        for letter in secret_word:
-            if letter in good_guesses:
-                print(letter, end='')
-            else:
-                print('_', end='')
+    	for letter in secret_word:
+        	if letter in good_guesses:
+            	print(letter, end='')
+			else:
+				print('_', end='')
 
 		print('')
 		print('Strikes: {} out of {}'.format(len(bad_guesses), number_of_guesses))
