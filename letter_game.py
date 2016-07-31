@@ -47,7 +47,7 @@ while True:
 		if not guess.isalpha():
 			print("You can only guess letters!")
 			continue
-			
+
 
 		if guess.lower() in secret_word.lower():
 			good_guesses.append(guess)
