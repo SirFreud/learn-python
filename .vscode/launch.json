@@ -6,15 +6,16 @@
             "name": "Python",
             "type": "python",
             "request": "launch",
-            "pythonPath": "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/bin/python3.5",
             "stopOnEntry": true,
             "program": "${file}",
+            "pythonPath": "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/bin/python3.5",
             "externalConsole": true,
             "debugOptions": [
                 "WaitOnAbnormalExit",
                 "WaitOnNormalExit",
                 "RedirectOutput"
             ]
+            
         },
         {
             "name": "Python Console App",
@@ -22,6 +23,7 @@
             "request": "launch",
             "stopOnEntry": true,
             "program": "${file}",
+            "pythonPath": "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/bin/python3.5",
             "externalConsole": true,
             "debugOptions": [
                 "WaitOnAbnormalExit",
