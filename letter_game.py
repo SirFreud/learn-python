@@ -3,14 +3,14 @@ import random
 # Make a list of words
 words = [
 
-	'Apple',
-	'Banana',
-	'Orange',
-	'Strawberry',
-	'Lemon',
-	'Grapefruit',
-	'Blueberry',
-	'Melon'
+	'apple',
+	'banana',
+	'orange',
+	'strawberry',
+	'lemon',
+	'grapefruit',
+	'blueberry',
+	'melon'
 ]
 
 number_of_guesses = 7
@@ -25,13 +25,13 @@ while True:
 	bad_guesses = []
 	good_guesses = []
 
-	while len(bad_guesses) < number_of_guesses and len(good_guesses) != len(list(secret_word)):
-		# Draw spaces, guessed letters and strikes
-		for letter in secret_word.lower():
-			if letter in good_guesses:
-				print(letter, end='')
-			else:
-				print('_', end='')
+	while len(bad_guesses) < 7 and len(good_guesses) != len(list(secret_word)):
+        for letter in secret_word:
+            if letter in good_guesses:
+                print(letter, end='')
+            else:
+                print('_', end='')
+
 		print('')
 		print('Strikes: {} out of {}'.format(len(bad_guesses), number_of_guesses))
 		print('')
