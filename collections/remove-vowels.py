@@ -4,22 +4,18 @@ def main():
 	print(user_input)
 	remove_vowels(user_input)
 
-def remove_vowels(user_input):
+def remove_vowels(list_of_user_input):
 
-	for letter in user_input:
-
-		if letter == 'a' or letter == 'e' or letter == 'i' or letter == 'o' or letter == 'u':
-			try:
-				user_input.remove(letter)
-			except ValueError:
-				continue
-		else:
-			user_input.join(letter)
-			print(user_input)
-	return user_input
+	for word in list_of_user_input:
+		for letter in list_of_user_input[word]:
+			if letter == 'a' or letter == 'e' or letter == 'i' or letter == 'o' or letter == 'u':
+				try:
+					list_of_user_input.remove(letter)
+				except ValueError:
+					continue
+			else:
+				list_of_user_input.join(letter)
+				print(list_of_user_input)
+	return list_of_user_input
 
 main()
-
-
-
-
