@@ -1,3 +1,5 @@
+import sys
+
 shopping_list = []
 
 def show_help():
@@ -6,7 +8,7 @@ def show_help():
 def show_list():
 	count = 1
 	for item in shopping_list:
-		print('{}: {}'.format(count, item))
+		print('{}. {}'.format(count, item))
 		count += 1
 
 print('Give me a list of things you would like to shop for')
@@ -26,12 +28,17 @@ while True:
 		show_list()
 		continue
 	new_list = new_stuff.split(',')
-	index =input('Add this at a certain spot? Press Enter for the end of the list or give me a number. Currently {} items in the list'.format(len(shopping_list)))
+	index =input('Add this at a certain spot? Press Enter for the end of the list or give me a number. Currently {} items in the list\n'.format(len(shopping_list)))
 	if index:
-		spot = int(index) - 1
-		for item in new_list:
-			shopping_list.insert(spot, item.strip())
-			spot += 1
+		try:
+			spot = int(index) - 1
+		except ValueError:
+			print("That's not a number!")
+			continue
+		else:
+			for item in new_list:
+				shopping_list.insert(spot, item.strip())
+				spot += 1
 	else:
 		for item in new_list:
 			shopping_list.append(item.strip())
