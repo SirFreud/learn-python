@@ -7,7 +7,6 @@ words = [
 
 	'apple',
 	'banana',
-
 	'orange',
 	'strawberry',
 	'lemon',

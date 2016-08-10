@@ -1,10 +1,14 @@
-import sys
-
 shopping_list = []
+
+def remove_item(idx):
+	index = idx - 1
+	item = shopping_list.pop(index)
+	print("Remove {}.".format(item))
 
 def show_help():
 	print("\nSeparate each item with a comma")
-	print("\nType DONE to quit, SHOW to see current list, or HELP to see this message")
+	print("\nType DONE to quit, SHOW to see current list, REMOVE to remove an item or HELP to see this message")
+
 def show_list():
 	count = 1
 	for item in shopping_list:
@@ -27,6 +31,10 @@ while True:
 	if new_stuff == 'SHOW':
 		show_list()
 		continue
+	if new_stuff == "REMOVE":
+		show_list()
+		idx = input("Which item? (Give the number): ")
+		remove_item(int(idx))
 	new_list = new_stuff.split(',')
 	index = input('Add this at a certain spot? Press Enter for the end of the list or give me a number. Currently {} items in the list\n'.format(len(shopping_list)))
 	if index:
