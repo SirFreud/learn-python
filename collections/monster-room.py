@@ -1,6 +1,6 @@
 import random
 
-def main():
+def play():
 	the_map = set_map()
 	player_point = starting_player_location(the_map)
 	print(player_point)
@@ -12,5 +12,5 @@ def starting_player_location(the_map):
 	return random.choice(the_map[0]), random.choice(the_map[1])
 
 
-main()
+play()
 
