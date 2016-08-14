@@ -1,6 +1,7 @@
 import sys
 import random
 
+
 def play():
 	open_dialog()
 	the_map = set_map()
