@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b3b276f-9199-4439-842c-d1bdbff8de03" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/monster-room.py" afterPath="$PROJECT_DIR$/collections/monster-room.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monster-game/monster-room.py" afterPath="$PROJECT_DIR$/monster-game/monster-room.py" />
     </list>
     <ignored path="learn-python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,11 +23,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="monster-room.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/collections/monster-room.py">
+        <entry file="file://$PROJECT_DIR$/monster-game/monster-room.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-              <folding />
+            <state relative-caret-position="319">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,6 +50,7 @@
         <option value="$PROJECT_DIR$/collections/string_factory.py" />
         <option value="$PROJECT_DIR$/collections/greatest_teacher.py" />
         <option value="$PROJECT_DIR$/collections/monster-room.py" />
+        <option value="$PROJECT_DIR$/monster-game/monster-room.py" />
       </list>
     </option>
   </component>
@@ -111,24 +114,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="dicts&#9;null&#9;null&#10;vowels&#9;FILE&#9;file:///Users/michaelvaldez/Desktop/learn-python/collections/remove-vowels-solution.py&#10;num&#9;FILE&#9;file:///Users/michaelvaldez/Desktop/learn-python/python-basics/number-game-2.py&#10;remove&#9;FILE&#9;file:///Users/michaelvaldez/Desktop/learn-python/collections/remove-vowels-solution.py" />
   </component>
-  <component name="RunManager" selected="Python.monster-room">
-    <configuration default="false" name="remove-vowels" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collections" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="learn-python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/collections/remove-vowels.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.monster-room (1)">
     <configuration default="false" name="dicts" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -193,6 +179,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="learn-python" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/collections/monster-room.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="monster-room (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/monster-game" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="learn-python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/monster-game/monster-room.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -332,19 +335,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.remove-vowels" />
-      <item index="1" class="java.lang.String" itemvalue="Python.dicts" />
-      <item index="2" class="java.lang.String" itemvalue="Python.string_factory" />
-      <item index="3" class="java.lang.String" itemvalue="Python.greatest_teacher" />
-      <item index="4" class="java.lang.String" itemvalue="Python.monster-room" />
+      <item index="0" class="java.lang.String" itemvalue="Python.dicts" />
+      <item index="1" class="java.lang.String" itemvalue="Python.string_factory" />
+      <item index="2" class="java.lang.String" itemvalue="Python.greatest_teacher" />
+      <item index="3" class="java.lang.String" itemvalue="Python.monster-room" />
+      <item index="4" class="java.lang.String" itemvalue="Python.monster-room (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.monster-room" />
-        <item index="1" class="java.lang.String" itemvalue="Python.greatest_teacher" />
-        <item index="2" class="java.lang.String" itemvalue="Python.string_factory" />
-        <item index="3" class="java.lang.String" itemvalue="Python.dicts" />
-        <item index="4" class="java.lang.String" itemvalue="Python.remove-vowels" />
+        <item index="0" class="java.lang.String" itemvalue="Python.monster-room (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.monster-room" />
+        <item index="2" class="java.lang.String" itemvalue="Python.greatest_teacher" />
+        <item index="3" class="java.lang.String" itemvalue="Python.string_factory" />
+        <item index="4" class="java.lang.String" itemvalue="Python.dicts" />
       </list>
     </recent_temporary>
   </component>
@@ -373,7 +376,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32955974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20833333" sideWeight="0.53584903" order="2" side_tool="true" content_ui="tabs" />
@@ -426,11 +429,19 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="13" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/collections/monster-room.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/collections/monster-room.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -665,6 +676,16 @@
         <state relative-caret-position="145">
           <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-game/monster-room.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
