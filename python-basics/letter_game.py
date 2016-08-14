@@ -4,7 +4,6 @@ import sys
 
 # Make a list of words
 words = [
-
 	'apple',
 	'banana',
 	'orange',
