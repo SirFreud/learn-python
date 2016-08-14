@@ -9,7 +9,7 @@ class Monster(object):
 	max_experience = 1
 	weapon = 'sword'
 	sound = 'roar'
-	
+
 	def __init__(self, **kwargs):
 		self.hit_points = random.randint(self.min_hit_points, self.max_hit_points)
 		self.experience = random.randint(self.min_experience, self.max_experience)
@@ -26,3 +26,17 @@ class Goblin(Monster):
 	max_hit_points = 3
 	max_experience = 2
 	sound = 'squeak'
+
+class Troll(Monster):
+	min_hit_points = 3
+	max_hit_points = 5
+	max_experience = 6
+	min_experience = 2
+	sound = 'growl'
+
+class Dragon(Monster):
+	min_hit_points = 5
+	max_hit_points = 10
+	min_experience = 6
+	max_experience = 10
+	sound = 'raaaawr'
