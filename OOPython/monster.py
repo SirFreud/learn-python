@@ -3,40 +3,43 @@ COLORS = ('yellow', 'red', 'blue', 'green')
 
 
 class Monster(object):
-	min_hit_points = 1
-	max_hit_points = 1
-	min_experience = 1
-	max_experience = 1
-	weapon = 'sword'
-	sound = 'roar'
+    min_hit_points = 1
+    max_hit_points = 1
+    min_experience = 1
+    max_experience = 1
+    weapon = 'sword'
+    sound = 'roar'
 
-	def __init__(self, **kwargs):
-		self.hit_points = random.randint(self.min_hit_points, self.max_hit_points)
-		self.experience = random.randint(self.min_experience, self.max_experience)
-		self.color = random.choice(COLORS)
+    def __init__(self, **kwargs):
+        self.hit_points = random.randint(self.min_hit_points, self.max_hit_points)
+        self.experience = random.randint(self.min_experience, self.max_experience)
+        self.color = random.choice(COLORS)
 
-		for key, value in kwargs.items():
-			setattr(self, key, value)
+        for key, value in kwargs.items():
+        	setattr(self, key, value)
 
-	def battlecry(self):
-		return self.sound.upper()
+    def battlecry(self):
+        return self.sound.upper()
+
 
 class Goblin(Monster):
-	pass
-	max_hit_points = 3
-	max_experience = 2
-	sound = 'squeak'
+    pass
+    max_hit_points = 3
+    max_experience = 2
+    sound = 'squeak'
+
 
 class Troll(Monster):
-	min_hit_points = 3
-	max_hit_points = 5
-	max_experience = 6
-	min_experience = 2
-	sound = 'growl'
+    min_hit_points = 3
+    max_hit_points = 5
+    max_experience = 6
+    min_experience = 2
+    sound = 'growl'
+
 
 class Dragon(Monster):
-	min_hit_points = 5
-	max_hit_points = 10
-	min_experience = 6
-	max_experience = 10
-	sound = 'raaaawr'
+    min_hit_points = 5
+    max_hit_points = 10
+    min_experience = 6
+    max_experience = 10
+    sound = 'raaaawr'
