@@ -2,7 +2,6 @@ import sys
 import random
 
 def play():
-
 	open_dialog()
 	the_map = set_map()
 	player_point = starting_player_location(the_map)
@@ -79,7 +78,8 @@ def end_game():
 	sys.exit()
 
 def open_dialog():
-	print("""\nWelcome to the Mosnter Room! You've been dropped into a 5x5 grid.\n
+	print("""
+	\nWelcome to the Mosnter Room! You've been dropped into a 5x5 grid.\n
 	Your goal is to reach the upper right hand corner at location (5, 5)\n
 	You'll start in a random location\n
 	Watch out! A monster lurks in a random location on the grid.\n
