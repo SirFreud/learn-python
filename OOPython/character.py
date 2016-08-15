@@ -1,5 +1,8 @@
-# creating a class for my character
-class Character(object):
+from combat import Combat
+
+
+# Creating a class for my character
+class Character(Combat):
     experience = 0
     hit_points = 10
 
