@@ -1,10 +1,20 @@
 from combat import Combat
+import random
 
 
 # Creating a class for my character
 class Character(Combat):
+    attack_limit = 10
     experience = 0
     hit_points = 10
+
+    def attack(self):
+        roll = random.randint(1, self.attack_limit)
+        if self.weapon == 'sword':
+            roll += 1
+        if self.weapon == 'axe':
+            roll += 2
+        return roll > 4
 
 # Group common operations into functions
 # Group common functionality into classes
