@@ -1,7 +1,7 @@
 def main():
-	user_input = input("Please type a list of words separated by commas: ")
-	user_input = user_input.replace(" ", "").split(',')
-	remove_vowels(user_input)
+    user_input = input("Please type a list of words separated by commas: ")
+    user_input = user_input.replace(" ", "").split(',')
+    remove_vowels(user_input)
 
 def remove_vowels(list_of_user_input):
 
